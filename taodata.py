@@ -1,6 +1,6 @@
 import numpy as np
 import os
-class DatasetManager:
+class Dataset:
     def __init__(self, size=1_000_000, folder_name="data"):
         self.size = size
         self.folder_name = folder_name
@@ -8,7 +8,7 @@ class DatasetManager:
         self._create_folder()
     def _create_folder(self):
         os.makedirs(self.folder_name)
-    def generate(self):
+    def gen(self):
         self.data_dict['file_01.txt'] = np.sort(np.random.uniform(0, 1e8, self.size))
         de_data = np.random.uniform(0, 1e8, self.size)
         self.data_dict['file_02.txt'] = np.sort(de_data)[::-1]
@@ -23,6 +23,7 @@ class DatasetManager:
             fmt = '%.6f' if 'float' in filename else '%d'
             np.savetxt(path, array, fmt=fmt)
 
-manager = DatasetManager(size=1_000_000, folder_name="Data_create")
-manager.generate()
+manager = Dataset(size=1_000_000, folder_name="Data_create")
+manager.gen()
+
 manager.save()
