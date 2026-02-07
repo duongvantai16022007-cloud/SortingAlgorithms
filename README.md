@@ -1,4 +1,4 @@
-Sorting Algorithm Benchmark Suite
+Sorting Algorithm Benchmark
 Dự án này là một bộ công cụ toàn diện được viết bằng Python nhằm mục đích tạo dữ liệu thử nghiệm và đo lường hiệu suất của các thuật toán sắp xếp phổ biến trong Cấu trúc dữ liệu và Giải thuật (DSA).
 
 🚀 Tính năng chính
@@ -28,4 +28,5 @@ Hệ thống phân cấp: Sử dụng Class Sorting để quản lý thuật to�
 
 Xử lý đệ quy: Đã được tối ưu hóa bằng sys.setrecursionlimit để không bị tràn ngăn xếp khi xử lý 1.000.000 phần tử.
 CÓ THỂ THAM KHẢO FILE ĐƯỢC TẠO VÀ TÔI DÙNG ĐỂ ĐÁNH GIÁ TẠI ĐÂY: https://drive.google.com/drive/folders/1-MBiim7TYbG9aIEoD1roZ_lPZY-R1kCK?usp=sharing
+
 
