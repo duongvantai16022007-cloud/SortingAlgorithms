@@ -1,7 +1,7 @@
 import numpy as np
 import os
 
-class DatasetManager:
+class Dataset:
     def __init__(self, size=1_000_000, folder_name="Data_create"):
         self.size = size
         self.folder_name = folder_name
@@ -28,6 +28,6 @@ class DatasetManager:
             np.savetxt(path, array, fmt=fmt)
         
 
-manager = DatasetManager(size=1_000_000, folder_name="Data_create")
+manager = Dataset(size=1_000_000, folder_name="Data_create")
 manager.generate()
 manager.save()
